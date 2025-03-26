@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera Rental Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-card">
+      <h2>Camera Rental Form</h2>
+      
+      <form id="rentalForm">
+        <!-- User Information Section -->
+        <div class="form-section">
+          <h3>Personal Information</h3>
+          <div class="grid-2">
+            <div class="input-group">
+              <span class="icon">📱</span>
+              <input type="text" name="fullName" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+              <span class="icon">📞</span>
+              <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="input-group">
+              <span class="icon">✉️</span>
+              <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+              <span class="icon">🏠</span>
+              <input type="text" name="address" placeholder="Delivery Address" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rental Details Section -->
+        <div class="form-section">
+          <h3>Rental Details</h3>
+          <div class="grid-2">
+            <div class="input-group">
+              <span class="icon">📸</span>
+              <select name="cameraType" required>
+                <option value="">Select Camera Type</option>
+                <option value="dslr">DSLR</option>
+                <option value="mirrorless">Mirrorless</option>
+                <option value="action">Action Camera</option>
+                <option value="video">Video Camera</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <span class="icon">📸</span>
+              <input type="text" name="modelPreference" placeholder="Model Preference">
+            </div>
+            <div class="input-group">
+              <span class="icon">🔍</span>
+              <select name="lensType">
+                <option value="">Select Lens Type (Optional)</option>
+                <option value="wide">Wide Angle</option>
+                <option value="telephoto">Telephoto</option>
+                <option value="macro">Macro</option>
+                <option value="prime">Prime</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <span class="icon">📅</span>
+              <input type="date" name="startDate" required>
+            </div>
+            <div class="input-group">
+              <span class="icon">📅</span>
+              <input type="date" name="endDate" required>
+            </div>
+            <div class="input-group">
+              <span class="icon">📍</span>
+              <select name="pickupLocation" required>
+                <option value="">Select Pickup Location</option>
+                <option value="store1">Main Store - City Center</option>
+                <option value="store2">Branch - West End</option>
+                <option value="store3">Branch - East Side</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="form-section">
+          <h3>Payment Information</h3>
+          <div class="grid-2">
+            <div class="input-group">
+              <span class="icon">💳</span>
+              <select name="paymentMethod" required>
+                <option value="">Select Payment Method</option>
+                <option value="card">Credit/Debit Card</option>
+                <option value="cash">Cash on Delivery</option>
+                <option value="upi">UPI</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <span class="icon">🎫</span>
+              <input type="text" name="couponCode" placeholder="Coupon Code (Optional)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="form-section">
+          <h3>Additional Information</h3>
+          <div class="input-group">
+            <span class="icon">💭</span>
+            <textarea name="specialRequests" placeholder="Special Requests or Requirements" rows="4"></textarea>
+          </div>
+          <div class="input-group">
+            <span class="icon">📞</span>
+            <input type="tel" name="emergencyContact" placeholder="Emergency Contact Number">
+          </div>
+        </div>
+
+        <!-- Terms and Submit -->
+        <div class="form-section">
+          <div class="checkbox-group">
+            <input type="checkbox" name="agreeToTerms" id="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Rental Request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Camera Section */
+.cameras {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  color: #555;
+}
+
+/* Camera Grid */
+.camera-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.camera-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.camera-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #eee;
+}
+
+.camera-item h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.camera-item p {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.camera-item button {
+  background-color: #5c9f5f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.camera-item button a {
+  text-decoration: none;
+  color: white;
+}
+.camera-item button:hover {
+  background-color: #4e7b4e;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 50px;
+}
